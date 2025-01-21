@@ -1,19 +1,12 @@
 from fastapi import FastAPI
-from fastapi.openapi.models import Contact
+from app.routes.health_routes import health_router
+from app.routes.contact_routes import contact_router
+from app.routes.project_routes import project_router
 
 app = FastAPI()
 
-
-@app.get("/")
-async def root():
-    return {"message": "API providing endpoint to Jack Allen's Portfolio website."}
-
-
-@app.get("/projects}")
-async def projects():
-    return {"message": "Not implemented."}
+app.include_router(health_router)
+app.include_router(contact_router)
+app.include_router(project_router)
 
 
-@app.post("/contact")
-async def submit_contact_form(contact_form: ContactForm):
-    return {"message": "Not implemented."}

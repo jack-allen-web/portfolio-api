@@ -1,9 +1,9 @@
 from fastapi import APIRouter, HTTPException, status
 from app.models.contact_form import ContactForm
 
-router = APIRouter()
+contact_router = APIRouter()
 
-@router.post("/contact", status_code=status.HTTP_201_CREATED)
+@contact_router.post("/contact", status_code=status.HTTP_201_CREATED)
 async def submit_contact_form(contact: ContactForm):
     """Handle contact form submissions."""
     # Log or process the contact form
