@@ -41,7 +41,7 @@ Make sure you have the following installed:
 1. Clone the repository:
    ```bash
    git clone https://github.com/jack-allen-web/portfolio-api.git
-   cd fastapi-portfolio
+   cd portfolio-api
 2. Create and activate a virtual environment:
    ```bash
    python -m venv venv
