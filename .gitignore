@@ -1,4 +1,5 @@
 .idea
 .DS_Store
+tasks.txt
 test_main.http
 __pycache__/
