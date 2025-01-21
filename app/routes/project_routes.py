@@ -23,7 +23,7 @@ projects = [
 ]
 
 
-@project_router.get("/projects", response_model=List[app.models.project.Project], status_code=status.HTTP_200_OK)
+@project_router.get("/projects", response_model=List[Project], status_code=status.HTTP_200_OK)
 async def get_projects():
     """Retrieve all projects."""
     return projects
