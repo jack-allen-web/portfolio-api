@@ -53,18 +53,7 @@ Make sure you have the following installed:
    ```bash
    EMAIL_USERNAME=your_email
    EMAIL_PASSWORD=your_password
-   
-   portfolio-api/
-   ├── app/
-   │   ├── main.py          # Application entry point
-   │   ├── models/          # Pydantic models for data validation
-   │   └── routes/          # API routes and endpoints
-   ├── .env                 # Environment variables
-   ├── requirements.txt     # Python dependencies
-   ├── README.md            # Project documentation
-   └── tests/               # Test suite for the API
-   
-   
+
 ---
 
 ## **Usage**
@@ -87,6 +76,7 @@ Interactive API documentation is automatically generated and available at /docs.
    portfolio-api/
    ├── app/
    │   ├── main.py          # Application entry point
+   │   ├── config.py        # Environment specific config
    │   ├── models/          # Pydantic models for data validation
    │   └── routes/          # API routes and endpoints
    ├── .env                 # Environment variables
